@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes fallRain {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%) translateX(-5px);
+    }
+    10% {
+      opacity: 0.7;
+    }
+    90% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(100vh) translateX(5px);
+    }
+  }
+
+  @keyframes fallSnow {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%) translateX(-10px);
+    }
+    10% {
+      opacity: 0.8;
+    }
+    90% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(100vh) translateX(10px);
+    }
+  }
+
+  @keyframes floatY {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
